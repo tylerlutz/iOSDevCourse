@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,16 +25,67 @@
                                     <constraint firstAttribute="width" constant="105" id="FRH-Qh-6iH"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-qw-Fph">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="1N4-Ks-eMC"/>
+                                    <constraint firstAttribute="height" constant="21" id="CwM-Fc-Rl2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-jH-sFW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuM-If-xJK">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="u2P-wk-Heq"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBQ-AN-YoF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ag5-qV-lYn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v67-0Z-8G7">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="K1C-IL-ZXV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="v67-0Z-8G7" firstAttribute="leading" secondItem="zuM-If-xJK" secondAttribute="leading" id="7gx-ze-m9Q"/>
+                            <constraint firstItem="mBQ-AN-YoF" firstAttribute="trailing" secondItem="v67-0Z-8G7" secondAttribute="trailing" id="AZ8-QC-zgL"/>
                             <constraint firstItem="h5v-rC-qCO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AhG-gl-EPK"/>
+                            <constraint firstItem="zuM-If-xJK" firstAttribute="top" secondItem="yZF-jH-sFW" secondAttribute="bottom" constant="15" id="CLy-f4-dOB"/>
                             <constraint firstItem="h5v-rC-qCO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="DgC-8k-fPp"/>
+                            <constraint firstItem="yZF-jH-sFW" firstAttribute="centerX" secondItem="0kb-qw-Fph" secondAttribute="centerX" id="EWJ-ZJ-yln"/>
+                            <constraint firstItem="mBQ-AN-YoF" firstAttribute="top" secondItem="v67-0Z-8G7" secondAttribute="bottom" constant="8" id="Hvp-2c-G9q"/>
+                            <constraint firstItem="zuM-If-xJK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="KrT-Ny-Ocd"/>
+                            <constraint firstItem="v67-0Z-8G7" firstAttribute="trailing" secondItem="zuM-If-xJK" secondAttribute="trailing" id="Lbg-tX-owf"/>
+                            <constraint firstItem="zuM-If-xJK" firstAttribute="centerX" secondItem="yZF-jH-sFW" secondAttribute="centerX" id="Pa5-BS-MN6"/>
+                            <constraint firstItem="0kb-qw-Fph" firstAttribute="centerX" secondItem="h5v-rC-qCO" secondAttribute="centerX" id="cmT-gZ-XxI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zuM-If-xJK" secondAttribute="trailing" constant="20" id="don-c8-x87"/>
+                            <constraint firstItem="v67-0Z-8G7" firstAttribute="top" secondItem="zuM-If-xJK" secondAttribute="bottom" constant="18.329999999999998" id="eo1-uZ-w6G"/>
+                            <constraint firstItem="0kb-qw-Fph" firstAttribute="top" secondItem="h5v-rC-qCO" secondAttribute="bottom" constant="25" id="paA-rc-yHd"/>
+                            <constraint firstItem="yZF-jH-sFW" firstAttribute="top" secondItem="0kb-qw-Fph" secondAttribute="bottom" constant="8" id="rgI-om-Izm"/>
+                            <constraint firstItem="mBQ-AN-YoF" firstAttribute="leading" secondItem="v67-0Z-8G7" secondAttribute="leading" id="wKQ-zA-2ca"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
         </scene>
     </scenes>
     <resources>
